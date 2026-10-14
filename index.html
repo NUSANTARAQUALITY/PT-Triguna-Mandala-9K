@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PT. Triguna Mandala</title>
+
+<style>
+:root {
+    --blue: #0070c0;
+    --orange: #f29131;
+    --border-light: #ffffff;
+    --cell-bg: #f2f2f2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    flex: 1;
+}
+
+/* Container Logo */
+.logo-container {
+    padding: 10px 0 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    max-width: 70px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.company-title {
+    background: var(--orange);
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+/* Layout Tabel Responsif */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 6px 10px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.label {
+    width: 22%;
+    background: var(--blue);
+    color: #ffffff;
+    text-align: right;
+    font-weight: bold;
+    border-bottom: 2px solid var(--border-light);
+}
+
+.value {
+    background: var(--cell-bg);
+    color: #000000;
+    text-align: left;
+    border-bottom: 2px solid var(--border-light);
+    word-break: break-word;
+}
+
+footer {
+    background: var(--blue);
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    font-size: 13px;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Adaptasi untuk Layar HP / Mobile */
+@media (max-width: 600px) {
+    .logo-img {
+        max-width: 55px;
+    }
+
+    .company-title {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    td {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+
+    .label {
+        width: 35%;
+        font-size: 12px;
+    }
+
+    .value {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 11px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="logo-container">
+        <img src="images (2).jpeg" alt="Logo NQA" class="logo-img">
+    </div>
+
+    <div class="company-title">
+        PT. Triguna Mandala
+    </div>
+
+    <div class="table-responsive">
+        <table>
+            <tr>
+                <td class="label">CB Cert NO.</td>
+                <td class="value"> 39405</td>
+            </tr>
+            <tr>
+                <td class="label">Company Name</td>
+                <td class="value">PT. Triguna Mandala</td>
+            </tr>
+            <tr>
+                <td class="label">Company Address</td>
+                <td class="value">Jalan Jembatan Besi No. 33 Komplek Season City Blok A No 1, Jakarta Barat, Indonesia</td>
+            </tr>
+            <tr>
+                <td class="label">Scope</td>
+                <td class="value">Trading, workshop, installation and commissioning of instrumentation devices, electrical and mechanical parts</td>
+            </tr>
+            <tr>
+                <td class="label">Standard</td>
+                <td class="value">ISO 9001:2015</td>
+            </tr>
+            <tr>
+                <td class="label">Accreditation Symbol</td>
+                <td class="value">UKAS</td>
+            </tr>
+            <tr>
+                <td class="label">Issue Date</td>
+                <td class="value"> 12 November 2013</td>
+            </tr>
+            <tr>
+                <td class="label">Reissue Date</td>
+                <td class="value"> 12 October 2026</td>
+            </tr>
+            <tr>
+                <td class="label">Expires Date</td>
+                <td class="value"> 31 October 2029</td>
+            </tr>
+            <tr>
+                <td class="label">Status</td>
+                <td class="value">Valid</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<footer>
+    Copyright © 2026 SNQA. All rights reserved.
+</footer>
+
+</body>
+</html>
